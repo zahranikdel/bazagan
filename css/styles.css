@@ -1,0 +1,328 @@
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot");
+  src: url("../fonts/eot/IRANSansWeb_Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Bold.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Bold.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot");
+  src: url("../fonts/eot/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Medium.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Medium.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/eot/IRANSansWeb_Light.eot");
+  src: url("../fonts/eot/IRANSansWeb_Light.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_Light.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_Light.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/eot/IRANSansWeb_UltraLight.eot");
+  src: url("../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb_UltraLight.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb_UltraLight.woff") format("woff"), url("../fonts/ttf/IRANSansWeb_UltraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IRANSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/eot/IRANSansWeb.eot");
+  src: url("../fonts/eot/IRANSansWeb.eot?#iefix") format("embedded-opentype"), url("../fonts/woff2/IRANSansWeb.woff2") format("woff2"), url("../fonts/woff/IRANSansWeb.woff") format("woff"), url("../fonts/ttf/IRANSansWeb.ttf") format("truetype");
+}
+
+.preloader {
+  background-color: #f7f7f7;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999999;
+  -webkit-transition: .6s;
+  transition: .6s;
+  margin: 0 auto;
+}
+
+.preloader .preloader-circle {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  border-style: solid;
+  border-width: 1px;
+  border-top-color: #a7b300bd;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  z-index: 10;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 1px 5px 0 rgba(185, 35, 35, 0.15);
+  box-shadow: 0 1px 5px 0 rgba(185, 35, 85, 0.15);
+  background-color: #fff;
+  -webkit-animation: zoom 2000ms infinite ease;
+  animation: zoom 2000ms infinite ease;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.preloader .preloader-circle2 {
+  border-top-color: #00ff37;
+}
+
+.preloader .preloader-img {
+  position: absolute;
+  top: 50%;
+  z-index: 200;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  text-align: center;
+  display: inline-block;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-top: 6px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.preloader .preloader-img img {
+  max-width: 55px;
+}
+
+.preloader .pere-text strong {
+  font-weight: 800;
+  color: #dca73a;
+  text-transform: uppercase;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: .6s;
+    transition: .6s;
+  }
+}
+
+/* radshodam 
+*/
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+body {
+  line-height: 1;
+  font-family: "IRANSans";
+  direction: rtl;
+}
+
+code {
+  display: inline-block;
+}
+
+code,
+.hamburger {
+  vertical-align: middle;
+}
+
+.nav-lang {
+  background-color: #6b6a6a;
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+}
+
+.nav-lang .logo-sm p {
+  color: #dcdcdc;
+  text-align: right;
+  font-size: 0.850rem;
+}
+
+.nav-lang .logo-sm img {
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.nav-lang .lang img {
+  width: 2.5rem;
+  height: 2rem;
+}
+
+.navbar {
+  background-color: #e5e5e5;
+  max-width: 100%;
+  max-height: -webkit-fit-content;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  border-bottom: 1px solid #9e9e9e;
+  -webkit-box-shadow: 0px 0px 3px 0px #9e9e9e;
+          box-shadow: 0px 0px 3px 0px #9e9e9e;
+}
+
+.navbar .search-box {
+  float: left;
+}
+
+.navbar nav {
+  height: 80px;
+  width: 100%;
+  padding-bottom: 90px;
+}
+
+.navbar nav ul {
+  direction: rtl;
+  float: right;
+}
+
+.navbar nav li {
+  display: inline-block;
+  line-height: 80px;
+}
+
+.navbar nav li a {
+  color: #1a1a1a;
+  font-size: 0.95rem;
+  font-weight: 400;
+  padding: 7px 2px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.9s;
+          transition-duration: 0.9s;
+}
+
+.navbar nav a.active {
+  background: #3e79c7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+  color: white;
+  padding: 10px 10px;
+}
+
+.navbar nav a:hover {
+  color: white;
+  background: #6862c2;
+  -webkit-transition: .5s;
+  transition: .5s;
+  text-decoration: none;
+  padding: 10px 10px;
+  -webkit-box-shadow: 0px 1px 3px -1px rgba(136, 151, 147, 0.86);
+          box-shadow: 0px 1px 3px -1px rgba(136, 151, 147, 0.86);
+}
+
+.navbar label.logo {
+  cursor: pointer;
+  color: white;
+  font-size: 35px;
+  line-height: 73px;
+  padding: 0 60px;
+  font-weight: bold;
+  float: left;
+}
+
+.navbar label.logo img {
+  width: 6rem;
+  height: 5.5rem;
+}
+
+.navbar .checkbtn {
+  font-size: 1rem;
+  color: #6862c2;
+  float: left;
+  line-height: 80px;
+  margin-left: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar #check {
+  display: none;
+}
+
+@media (max-width: 952px) {
+  .navbar label.logo {
+    font-size: 30px;
+    padding-right: 50px;
+  }
+  .navbar nav ul li a {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 858px) {
+  .navbar .checkbtn {
+    display: block;
+  }
+  .navbar nav ul {
+    position: absolute;
+    width: 70%;
+    height: 466px;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    text-decoration: none;
+    border-radius: 2%;
+  }
+  .navbar nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  .navbar nav ul li a {
+    font-size: 20px;
+  }
+  .navbar nav ul li a a:hover,
+  .navbar nav ul li a a.active {
+    background: none;
+    color: #20fa69;
+    text-decoration: none;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .navbar #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+.navbar .fixed-top {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-duration: 0.7s;
+          transition-duration: 0.7s;
+}
+/*# sourceMappingURL=styles.css.map */

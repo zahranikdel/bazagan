@@ -1,0 +1,204 @@
+            @import "./variables.scss";
+            @import "./fonts";
+            @import "./Radloader";
+            /* radshodam 
+*/
+
+            // start for defult css html
+            html {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+            }
+
+            body {
+                line-height: 1;
+                font-family: "IRANSans";
+                direction: rtl;
+            }
+
+            code {
+                display: inline-block;
+            }
+
+            code,
+            .hamburger {
+                vertical-align: middle;
+            }
+
+            // start navbar language
+            .nav-lang {
+                background-color: $color-nav;
+                max-width: 100%;
+                max-height: fit-content;
+
+                .logo-sm {
+                    p {
+                        color: $color_greyBackgroud;
+                        text-align: right;
+                        font-size: 0.850rem;
+                    }
+
+                    img {
+                        width: 2.5rem;
+                        height: 2rem;
+                    }
+                }
+
+                .lang {
+                    img {
+                        width: 2.5rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            //end navbar language
+            // :start
+            .navbar {
+
+                background-color:  #e5e5e5;
+                max-width: 100%;
+                max-height: fit-content;
+                border-bottom: 1px solid $color_greyborder;
+                box-shadow: 0px 0px 3px 0px $color_greyborder;
+
+                .search-box{
+                    float: left;
+                }
+                nav {
+                    height: 80px;
+                    width: 100%;
+                    padding-bottom: 90px;
+
+
+                    ul {
+                        direction: rtl;
+                        float:right;
+                        
+                    }
+
+                    li {
+                        display: inline-block;
+                        line-height: 80px;
+
+                        a {
+                            color: #1a1a1a;
+                            font-size: 0.95rem;
+                            font-weight: 400;
+                            padding: 7px 2px;
+                            border-radius: 3px;
+                            text-transform: uppercase;
+                            transition-duration: 0.9s;
+                        }
+                    }
+
+                    a.active {
+                        background: rgb(62, 121, 199);
+                        transition: .5s;
+                        text-decoration: none;
+                        color: white;
+                        padding: 10px 10px;
+
+                    }
+
+                    a:hover {
+                        color: white;
+                        background: #6862c2;
+                        transition: .5s;
+                        text-decoration: none;
+                        padding: 10px 10px;
+                        box-shadow: 0px 1px 3px -1px rgba(136, 151, 147, 0.86);
+                    }
+                }
+
+                label.logo {
+                    cursor: pointer;
+                    color: white;
+                    font-size: 35px;
+                    line-height: 73px;
+                    padding: 0 60px;
+                    font-weight: bold;
+                    float: left;
+
+                    img {
+                        width:6rem;
+                        height: 5.5rem;
+                    }
+                }
+
+                .checkbtn {
+                    font-size: 1rem;
+                    color: #6862c2;
+                    float: left;
+                    line-height: 80px;
+                    margin-left: 40px;
+                    cursor: pointer;
+                    display: none;
+                }
+
+                #check {
+                    display: none;
+                }
+
+                @media (max-width: 952px) {
+                    label.logo {
+                        font-size: 30px;
+                        padding-right: 50px;
+                    }
+
+                    nav ul li a {
+                        font-size: 16px;
+                    }
+                }
+
+                @media (max-width: 858px) {
+                    .checkbtn {
+                        display: block;
+                    }
+
+                    nav {
+                        ul {
+                            position: absolute;
+                            width: 70%;
+                            height: 466px;
+                            top: 80px;
+                            left: -100%;
+                            text-align: center;
+                            transition: all .5s;
+                            text-decoration: none;
+                            border-radius: 2%;
+                        }
+                    }
+
+                    nav ul li {
+                        display: block;
+                        margin: 50px 0;
+                        line-height: 30px;
+                    }
+
+                    nav ul li a {
+                        font-size: 20px;
+
+                        a:hover,
+                        a.active {
+                            background: none;
+                            color: #20fa69;
+                            text-decoration: none;
+                            font-weight: 600;
+                            text-decoration: none;
+                        }
+                    }
+
+                    #check:checked~ul {
+                        left: 0;
+                    }
+                }
+
+                .fixed-top {
+                    transition: 0.5s;
+                    transition-duration: 0.7s;
+                }
+            }
+
+            // for fix top scroll black
